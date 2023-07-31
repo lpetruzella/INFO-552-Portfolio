@@ -13,6 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --darkGrey: #4c545b;
+  --blueGrey:#93a2b0;
+  --plum:#564c5b;
+  --oliveBrown:#5a5b4c;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
