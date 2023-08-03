@@ -339,6 +339,10 @@ body {
   background-color: var(--blueGrey);
 }
 
+aside {
+  background-color: var(--oliveBrown);
+}
+
 /* =============
     Typography
 ============= */
@@ -371,9 +375,17 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: var(--plum);
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--darkGrey);
+}
+
 /* =============
     Index
 ============= */
