@@ -346,8 +346,8 @@ aside {
 .content-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% auto;
-  grid-template-columns: 70% auto;
+  -ms-grid-columns: 75% auto;
+  grid-template-columns: 75% auto;
       grid-template-areas: "header header" "section aside" "footer footer";
 }
 

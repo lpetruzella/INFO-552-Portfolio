@@ -9,19 +9,13 @@ aside{background-color: var(--oliveBrown);}
 
 .content-grid{
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 75% auto;
     grid-template-areas: 
     "header header"
     "section aside"
     "footer footer";
-}
 
-// .content-grid-item{
-//     grid-area: content;
-//     background-color: var(--blueGrey) ;
-
-// }
-
+   }
 .header-grid-item{
     grid-area: header;
     padding: 50px;
