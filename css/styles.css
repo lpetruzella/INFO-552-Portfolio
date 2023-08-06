@@ -340,27 +340,61 @@ body {
 }
 
 aside {
-  background-color: var(--plum);
+  background-color: var(--oliveBrown);
 }
 
 .content-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". content .";
+  -ms-grid-columns: 70% auto;
+  grid-template-columns: 70% auto;
+      grid-template-areas: "header header" "section aside" "footer footer";
 }
 
-.content-grid-item {
+.header-grid-item {
   -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  padding: 50px;
+}
+
+#index-left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: section;
+  padding: 50px;
+}
+
+#main-content-right {
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: content;
-  background-color: var(--blueGrey);
+  grid-area: aside;
+  padding: 50px;
+}
+
+.footer-grid-item {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  padding: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* =============
     Typography
 ============= */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
@@ -441,6 +475,30 @@ footer {
 /* =============
     Associations
 ============= */
+#ALA {
+  width: 200px;
+}
+
+#CORE {
+  width: 200px;
+}
+
+#RUSA {
+  width: 200px;
+}
+
+#FTRF {
+  width: 200px;
+}
+
+#JEDI {
+  width: 100px;
+}
+
+#SPCA {
+  width: 100px;
+}
+
 /* =============
     Experience
 ============= */

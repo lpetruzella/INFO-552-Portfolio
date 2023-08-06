@@ -5,20 +5,46 @@ body{
     background-color: var(--blueGrey);
 }
 
-aside{background-color: var(--plum);}
+aside{background-color: var(--oliveBrown);}
 
 .content-grid{
     display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". content .";
+    grid-template-columns: 70% auto;
+    grid-template-areas: 
+    "header header"
+    "section aside"
+    "footer footer";
 }
 
-.content-grid-item{
-    grid-area: content;
-    background-color: var(--blueGrey) ;
+// .content-grid-item{
+//     grid-area: content;
+//     background-color: var(--blueGrey) ;
 
+// }
+
+.header-grid-item{
+    grid-area: header;
+    padding: 50px;
+}
+
+#index-left{
+    grid-area: section;
+    padding: 50px;
 }
 
 #main-content-right{
-    
+    grid-area: aside;
+    padding: 50px;    
+}
+
+.footer-grid-item{
+    grid-area: footer;
+    padding: 50px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
