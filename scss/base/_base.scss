@@ -5,4 +5,20 @@ body{
     background-color: var(--blueGrey);
 }
 
-aside{background-color: var(--oliveBrown);}
+aside{background-color: var(--plum);}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content .";
+}
+
+.content-grid-item{
+    grid-area: content;
+    background-color: var(--blueGrey) ;
+
+}
+
+#main-content-right{
+    
+}

@@ -1,3 +1,37 @@
 /* =============
     Navigation
 ============= */
+
+nav{
+    background-color: var(--plum);
+}
+
+//oliveBrown/black link
+.oliveBrownLink:link, .oliveBrownLink:visited{
+    color: var(--oliveBrown);
+    text-decoration: none;
+}
+
+.oliveBrownLink:hover, .oliveBrownLink:active{
+    color: var(--black);
+}
+
+//blueGrey/black link
+.blueGreyLink:link, .blueGreyLink:visited{
+    color: var(--blueGrey);
+    text-decoration: none;
+}
+
+.blueGreyLink:hover, .blueGreyLink:active{
+    color: var(--black);
+}
+
+//darkGrey/black link
+.darkGreyLink:link, .darkGreyLink:visited{
+    color: var(--darkGrey);
+    text-decoration: none;
+}
+
+.darkGreyLink:hover, .darkGreyLink:active{
+    color: var(--black);
+}

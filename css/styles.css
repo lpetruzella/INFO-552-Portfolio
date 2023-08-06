@@ -340,7 +340,22 @@ body {
 }
 
 aside {
-  background-color: var(--oliveBrown);
+  background-color: var(--plum);
+}
+
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+  background-color: var(--blueGrey);
 }
 
 /* =============
@@ -372,6 +387,37 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  background-color: var(--plum);
+}
+
+.oliveBrownLink:link, .oliveBrownLink:visited {
+  color: var(--oliveBrown);
+  text-decoration: none;
+}
+
+.oliveBrownLink:hover, .oliveBrownLink:active {
+  color: var(--black);
+}
+
+.blueGreyLink:link, .blueGreyLink:visited {
+  color: var(--blueGrey);
+  text-decoration: none;
+}
+
+.blueGreyLink:hover, .blueGreyLink:active {
+  color: var(--black);
+}
+
+.darkGreyLink:link, .darkGreyLink:visited {
+  color: var(--darkGrey);
+  text-decoration: none;
+}
+
+.darkGreyLink:hover, .darkGreyLink:active {
+  color: var(--black);
+}
+
 /* =============
     Header
 ============= */
@@ -391,4 +437,10 @@ footer {
 ============= */
 /* =============
     Coursework
+============= */
+/* =============
+    Associations
+============= */
+/* =============
+    Experience
 ============= */
